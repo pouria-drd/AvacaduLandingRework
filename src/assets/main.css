@@ -1,0 +1,134 @@
+@import "./base.css";
+
+@font-face {
+  font-family: "Bahij Nazanin";
+  src: url("./fonts/BahijNazanin/Bahij-Nazanin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iransans";
+  src: url("./fonts/Iransans/iransans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanWeb";
+  src: url("./fonts/IranYekan/IRANYekanWebRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("./fonts/Peyda/01-Standard/TTF/Peyda-Regular.ttf") format("truetype"),
+    url("./fonts/Peyda/woff/PeydaWeb-Regular.woff") format("woff"),
+    url("./fonts/Peyda/woff2/PeydaWeb-Regular.woff2") format("truetype");
+}
+
+@font-face {
+  font-family: "tanha";
+  src: url("./fonts/Tanha/Tanha-FD-WOL.woff2") format("woff2"),
+    url("./fonts/Tanha/Tanha-FD-WOL.woff") format("woff"),
+    url("./fonts/Tanha/Tanha-FD-WOL.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanX";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/IRANYekanX/IRANYekanX-Regular.woff") format("woff"),
+    url("./fonts/IRANYekanX/IRANYekanX-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IRANYekanX";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./fonts/IRANYekanX/IRANYekanX-Bold.woff") format("woff"),
+    url("./fonts/IRANYekanX/IRANYekanX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "satisfy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Satisfy/Satisfy-Regular.ttf") format("truetype");
+}
+
+.base-input {
+  border: none;
+  direction: rtl;
+  font-size: 14px;
+  color: #4a7337;
+  text-align: right;
+  padding: 12px 22px;
+  border-radius: 7px;
+  background: #f8f7ff;
+  font-family: "IRANYekanX";
+}
+
+.base-input:focus {
+  transition: 0.5s;
+  border-radius: 15px;
+  outline-color: #4a7337;
+}
+
+.base-input::placeholder {
+  font-size: 14px;
+  color: #959ea6;
+}
+
+.ss02 {
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+.base-ava-btn {
+  @apply bg-ava-green text-white text-sm font-yekanX rounded-[8px] transition hover:bg-ava-light-green hover:text-ava-green;
+}
+
+.m-nav-link {
+  @apply text-ava-gray font-yekanX text-sm transition hover:text-ava-black;
+}
+
+.nav-link {
+  @apply text-ava-gray font-yekanX text-sm transition hover:text-ava-black hover:scale-110;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1s ease-in-out forwards;
+}
+
+.late-fade-in {
+  opacity: 0;
+  animation: fade-in-animation 2s ease-in-out forwards;
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+  background: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+  background: #4a7337;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 10px;
+  background: #4a7337;
+}
+
+* {
+  scroll-behavior: smooth;
+}
